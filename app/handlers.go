@@ -20,6 +20,18 @@ type Customer struct {
 	Zipcode string `json:"zip_code" xml:"zipcode"`
 }
 
+func index(w http.ResponseWriter, r *http.Request) {
+	answer := ""
+	answer += "'/greet'\n"
+	answer += "'/customers'\n"
+	answer += "'/customers_xml'\n"
+	answer += "'/customers_flex'\n"
+	answer += "'/customers/{customer_id}'\n"
+	answer += "'/customers_int/{customer_id:[0-9]+}'\n"
+	answer += "'/methods' (GET, POST, PUT, DELETE)\n"
+	fmt.Fprint(w, answer)
+}
+
 func greet(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "Hello World")
 }
