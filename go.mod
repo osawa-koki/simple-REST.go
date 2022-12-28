@@ -1,4 +1,4 @@
-module github.com/osawa-koki/simple-REST.go
+module example.com/program
 
 go 1.19
 

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/osawa-koki/simple-REST.go/app"
+import "example.com/program/app"
 
 func main() {
 	app.Start()
