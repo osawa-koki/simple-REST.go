@@ -10,6 +10,6 @@ RUN go mod download && go mod verify
 
 COPY . .
 # 実行可能プログラム名をappという名前すると、実行時にディレクトリ名と重複しているため、エラーとなる。
-RUN go build -a -o -x main main.go
+RUN go build -a -x -o main main.go
 
 CMD ["./main"]
