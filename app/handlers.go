@@ -72,7 +72,7 @@ func getAllCustomers_flex(w http.ResponseWriter, r *http.Request) {
 		{Name: "Matz", City: "Tsukuba", Zipcode: "305-8577"},
 	}
 
-	if r.Header.Get("Accept") == "application/xml" {
+	if r.Header.Get("Accept") == "text/xml" {
 		w.Header().Add("Content-Type", "application/xml")
 		xml.NewEncoder(w).Encode(customers)
 	} else {
