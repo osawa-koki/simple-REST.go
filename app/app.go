@@ -28,5 +28,5 @@ func Start() {
 
 	// 第一引数 -> リッスンするアドレス
 	// 第二引数 -> 使用するmultiplexer | デフォルトで用意されているものを使用するため、nilを設定
-	http.ListenAndServe("localhost:8000", router)
+	http.ListenAndServe("0.0.0.0:80", router)
 }
