@@ -1,4 +1,4 @@
-FROM golang:1.19
+FROM golang:1.19-bullseye
 
 EXPOSE 80
 
@@ -9,6 +9,7 @@ COPY go.mod go.sum ./
 RUN go mod download && go mod verify
 
 COPY . .
-RUN go build -a -o app main.go
+# 実行可能プログラム名をappという名前すると、実行時にディレクトリ名と重複しているため、エラーとなる。
+RUN go build -a -o main main.go
 
-CMD ["app"]
+CMD ["./main"]
