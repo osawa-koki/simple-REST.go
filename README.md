@@ -6,6 +6,15 @@
 Go言語(gorilla/mux)でRESTAPIを構築するサンプルプログラム。  
 [gorilla](https://github.com/gorilla/mux)  
 
+![成果物](./.development/img/fruit.gif)  
+
+## 説明
+
+コードは「app」ディレクトリ内の「app.go」と「handlers.go」。  
+「app.go」ではURLルーティングでリクエストと関数を紐づけ、「handlers」ではリクエストに紐づけられて実行される関数を定義している。  
+
+その他説明はコード内にコメントアウトとして記載。  
+
 ## 実行方法
 
 ```shell
