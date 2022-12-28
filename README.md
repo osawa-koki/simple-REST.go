@@ -22,6 +22,15 @@ docker run -p 80:8080 -it --rm --name my-running-app my-golang-app
 
 <http://localhost:8080>へアクセス。  
 
-## メモ
+## デプロイ設定
 
-プログラムファイルにてあるパッケージをインポートし、「go mod tidy」を実行すると自動でダウンロードしてくれる!!!
+| キー | バリュー |
+| ---- | ---- |
+| Name | simple-rest-go |
+| Region | Oregon(US West) |
+| Branch | main |
+| Root Directory |  |
+| Environment | Docker |
+| Dockerfile Path | ./Dockerfile |
+| Docker Build Context Directory |  |
+| Docker Command |  |
