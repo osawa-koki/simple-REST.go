@@ -20,7 +20,7 @@ Dockerfileから実行する場合には以下のコマンドを実行。
 
 ```shell
 docker build -t my-golang-app .
-docker run -p 80:8080 -it --rm --name my-running-app my-golang-app
+docker run -p 8080:80 -it --rm --name my-running-app my-golang-app
 ```
 
 <http://localhost:8080>へアクセス。  
