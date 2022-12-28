@@ -1,4 +1,4 @@
-module github.com/osawa-koki/simple-gorilla_mux.go
+module github.com/osawa-koki/simple-REST.go
 
 go 1.17
 
