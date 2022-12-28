@@ -1,7 +1,7 @@
 # simple-REST.go
 
 > **Warning**  
-> [gorilla/mux](https://github.com/gorilla#gorilla-toolkit)は2022年10月でサポートが停止されています。  
+> [gorilla](https://github.com/gorilla#gorilla-toolkit)は2022年10月でサポートが停止されています。  
 
 Go言語(gorilla/mux)でRESTAPIを構築するサンプルプログラム。  
 [gorilla](https://github.com/gorilla/mux)  
